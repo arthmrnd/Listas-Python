@@ -1,0 +1,5 @@
+e, t = input().split()
+e = int(e)
+t = int(t)
+r = int(e/t)
+print(r)
