@@ -1,27 +1,44 @@
-a, b = input().split()
-a = int(a)
-b = int(b)
+n = int(input())
 
-li = []
-z = 0
-while(z < b):
-    li.append(0)
-    z = z+1
+e = []
+e = input().split()
 
+e = [int(x) for x in e]
 
-c = 0
-while(c < a):
-    s = int(input())
-    x = 0
-    while(x < b):
-        if(x==0 or x%s==0):
-            li[x] = 1
-        x = x +1
-    c = c+1
+f=[]
+cont = 0
+for i in e:
+    if(i==1):
+        f.append(i)
+        cont = cont+1
+    if(i==2):
+        f.append(i)
+        cont = cont+1
+    if(i==3):
+        f.append(i)
+        cont = cont+1
+    if(i==4):
+        f.append(i)
+        cont = cont+1
+    if(i==5):
+        f.append(i)
+        cont = cont+1
+    if(i==6):
+        f.append(i)
+        cont = cont+1
+    if(i==7):
+        f.append(i)
+        cont = cont+1
+p = ""
+f.sort()
+for n in f:
+    p = p + str(n) + " "
     
-pr = ""
-for n in li:
-    pr = pr + str(n) + " "
+p.lstrip()
+print(p)
+
+if(cont==7):
+    print("Saia Shenlong e realize o meu desejo")
+else:
+    print("Nao encontramos todas")
     
-pr.lstrip()
-print(pr)
