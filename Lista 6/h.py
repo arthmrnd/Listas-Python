@@ -12,7 +12,7 @@ def binary(array, x):
             r = m - 1
             
     cnt = 0
-    while(cont == 0):
+    while(cnt == 0):
         if(m <= r and array[m] <= x):
             m += 1
         else:
